@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Exam";
+}
+
+<h2>Exam</h2>
+
+<form action="/" method="post">
+    <p>姓名 : 候昱翔</p>
+    <p>學號 : 410918657</p>
+    @{
+        <p>喜歡的水果是:</p>
+        string[] fruits = { "蘋果", "香蕉", "荔枝", "鳳梨", "西瓜" };
+        foreach (var i in fruits)
+        {               
+<ol>
+    <li>@i</li>
+    
+</ol>
+        }
+    }
+   
+</form>
